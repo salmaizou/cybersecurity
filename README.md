@@ -1,90 +1,92 @@
 
-# 🔐 Cryptography Fundamentals | Python
+# 🔐 Applied Cryptography with Python
 
-### Exploring Encryption, Security Algorithms & Secure Communications
+**A practical introduction to cryptographic algorithms and secure communication protocols.**
 
-## 🚀 About the Project
+## 📌 Introduction
 
-This repository contains Python implementations of fundamental cryptographic techniques, developed as part of a cybersecurity learning project.
+This repository documents my exploration of cryptography through Python programming.
 
-The goal is to explore how cryptographic algorithms work, understand their security principles, and connect theoretical knowledge with practical programming.
+It focuses on understanding encryption mechanisms, experimenting with cryptographic techniques, and studying how modern systems protect information during transmission.
 
-## 💻 Implemented Modules
+## ⚙️ Project Components
 
-| Module | Description |
-|--------|-------------|
-| `ChiffrementAsymetrique.py` | Exploration of RSA asymmetric encryption |
-| `chiffrementSymetrique.py` | Implementation of symmetric encryption concepts |
-| `frequency.py` | Letter frequency analysis for cryptographic studies |
+### 01 — Symmetric Encryption
+Explore encryption and decryption mechanisms based on shared secret keys.
 
-## 🧠 Key Concepts
+**File:** `chiffrementSymetrique.py`
 
-**1. Symmetric Cryptography**
+### 02 — Asymmetric Encryption
+Study public-key cryptography and the mathematical principles behind RSA.
 
-Encryption and decryption using a shared secret key.
+**File:** `ChiffrementAsymetrique.py`
 
-**2. Asymmetric Cryptography**
+### 03 — Frequency Analysis
+Analyze character distributions to understand statistical patterns relevant to classical cryptanalysis.
 
-Public-key and private-key mechanisms, with a focus on RSA.
+**File:** `frequency.py`
 
-**3. Cryptanalysis**
+## 🌐 From Cryptography to HTTPS
 
-Frequency analysis to explore patterns in encrypted or plaintext messages.
+Modern secure communication relies on multiple complementary mechanisms.
 
-**4. Secure Communication**
+| Mechanism | Purpose |
+|-----------|---------|
+| Symmetric encryption | Protects data confidentiality |
+| Asymmetric cryptography | Supports authentication and other public-key operations |
+| Digital certificates | Bind identities to public keys |
+| ECDHE | Establishes a shared secret |
+| TLS | Secures communication between endpoints |
+| HTTPS | Carries HTTP over TLS |
 
-Understanding how HTTPS and TLS combine certificate verification, key exchange, and authenticated encryption.
-
-## 🔗 HTTPS Security Architecture
+### Simplified TLS 1.3 Flow
 
 ```text
-             HTTPS Connection
-                    |
-             TLS Handshake
-                    |
-          +---------+---------+
-          |                   |
-   Authentication       Key Agreement
-    Certificates            ECDHE
-          |                   |
-          +---------+---------+
-                    |
-              Session Keys
-                    |
-         Authenticated Encryption
-          AES-GCM / ChaCha20
-                    |
-           Secure Data Exchange
+Client                          Server
+  |                               |
+  |-------- ClientHello --------->|
+  |                               |
+  |<------- ServerHello ----------|
+  |                               |
+  |       Key Agreement           |
+  |          (ECDHE)              |
+  |                               |
+  |<---- Certificate + Proof -----|
+  |                               |
+  |------ Finished -------------->|
+  |                               |
+  |     Encrypted Application     |
+  |<========== Data =============>|
 ```
 
-## 🛠️ Tech Stack
+*This diagram is conceptual and omits some TLS handshake messages.*
 
-- **Language:** Python
-- **Version Control:** Git & GitHub
-- **Field:** Cybersecurity
-- **Topics:** Encryption, RSA, Frequency Analysis, TLS, PKI
+## 🧰 Technologies
 
-## 🎯 Skills Demonstrated
+`Python` · `Cryptography` · `RSA` · `Git` · `GitHub`
 
-- Python programming
-- Cryptographic algorithm fundamentals
-- Analytical problem-solving
-- Security concepts
-- Technical documentation
+## 🎓 Learning Goals
 
-## 📈 Future Improvements
+- Translate cryptographic theory into Python experiments.
+- Understand the differences between encryption techniques.
+- Explore basic cryptanalysis.
+- Develop a conceptual understanding of TLS and PKI.
+- Strengthen analytical and programming skills.
 
-- Implement hashing and digital signatures
-- Explore AES encryption
-- Experiment with key exchange protocols
-- Study TLS 1.3 and certificate validation
-- Add automated tests
+## 🔮 Next Steps
+
+- Add practical examples of hashing and digital signatures.
+- Explore authenticated encryption using AES-GCM.
+- Add unit tests and reproducible examples.
+- Document certificate verification and TLS 1.3.
+
+## ⚠️ Disclaimer
+
+The implementations in this repository are intended for educational purposes and should not be used to protect sensitive production data.
 
 ---
 
-### 👩‍💻 Author
-
 **Salma IZOUGHAR**  
-Engineering Student | École Centrale de Lyon
+Engineering Student — École Centrale de Lyon
 
-*Cybersecurity • Cryptography • Python*
+*Cybersecurity Learning Project · Phase 5*
