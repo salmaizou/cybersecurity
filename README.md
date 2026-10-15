@@ -1,96 +1,139 @@
 
-# 🔐 Cryptography Lab
+# 🔐 Cryptography & Secure Systems
 
-### Python Implementations | Encryption Algorithms | Cybersecurity
+### Exploring Cryptographic Algorithms Through Python
 
-## Overview
+## 📖 Project Description
 
-**Cryptography Lab** is a Python-based educational project focused on exploring fundamental cryptographic mechanisms and their role in information security.
+This repository presents a collection of Python exercises dedicated to understanding the foundations of cryptography and information security.
 
-The repository brings together practical exercises involving encryption, decryption, and frequency analysis, alongside an introduction to secure communication architectures.
+The project combines algorithmic exploration, practical programming, and security concepts to illustrate how cryptographic mechanisms contribute to protecting digital information.
 
-## Project Modules
+## 🎯 Objectives
 
-| File | Topic | Objective |
-|------|-------|-----------|
-| `chiffrementSymetrique.py` | Symmetric Cryptography | Explore encryption using shared keys |
-| `ChiffrementAsymetrique.py` | Asymmetric Cryptography | Understand RSA and public/private key operations |
-| `frequency.py` | Cryptanalysis | Analyze character frequencies and statistical patterns |
+The main objectives are to:
 
-## Core Security Concepts
+- Explore symmetric and asymmetric encryption techniques.
+- Understand the mathematical foundations of RSA.
+- Study frequency analysis in classical cryptography.
+- Strengthen Python programming and algorithmic reasoning.
+- Understand the role of cryptography in secure network protocols.
 
-### 🔑 Encryption
-Understanding how plaintext is transformed into ciphertext to protect sensitive information.
-
-### 🛡️ Public-Key Cryptography
-Exploring RSA and the relationship between public and private keys.
-
-### 📊 Cryptanalysis
-Studying frequency distributions and their relevance to classical encryption techniques.
-
-### 🌐 Network Security
-Understanding how TLS and HTTPS use cryptographic mechanisms to establish secure connections.
-
-## Secure Communication Workflow
+## 🗂️ Repository Structure
 
 ```text
-           USER / CLIENT
-                 |
-           DNS Resolution
-                 |
-           TCP Connection
-                 |
-           TLS Handshake
-                 |
-       +---------+---------+
-       |                   |
- Certificate           ECDHE Key
- Verification          Agreement
-       |                   |
-       +---------+---------+
-                 |
-          Session Keys
-                 |
-       Authenticated Encryption
-       AES-GCM / ChaCha20-Poly1305
-                 |
-          HTTPS Traffic
+cryptography-project/
+│
+├── ChiffrementAsymetrique.py
+├── chiffrementSymetrique.py
+├── frequency.py
+└── README.md
 ```
 
-## Technologies
+## 🔬 Technical Exploration
 
-**Programming Language:** Python
+### 1. Symmetric Cryptography
 
-**Development Tools:** Git, GitHub
+Study encryption techniques in which the sender and receiver use the same secret key.
 
-**Security Topics:** RSA, Encryption, Cryptanalysis, TLS, HTTPS, PKI
+**Python module:** `chiffrementSymetrique.py`
 
-## Learning Outcomes
+### 2. Asymmetric Cryptography
 
-This project strengthens my ability to:
+Explore RSA and the principles of public-key and private-key cryptography.
 
-- Implement and explore cryptographic techniques using Python.
-- Understand encryption and decryption mechanisms.
-- Analyze data patterns relevant to cryptanalysis.
-- Explain the foundations of secure network communication.
-- Document and organize cybersecurity experiments.
+**Python module:** `ChiffrementAsymetrique.py`
 
-## Future Development
+### 3. Frequency Analysis
 
-- Add SHA-256 hashing demonstrations.
-- Explore digital signatures and verification.
-- Implement AES-GCM examples using established libraries.
-- Introduce automated testing.
-- Extend documentation with practical TLS experiments.
+Investigate character frequency distributions and their applications in classical cryptanalysis.
 
-## Security Notice
+**Python module:** `frequency.py`
 
-This repository is intended for learning and experimentation. Its educational implementations are not designed for production security applications.
+## 🌍 Real-World Application: HTTPS
+
+Cryptography plays a central role in protecting web communications.
+
+A simplified HTTPS connection follows these steps:
+
+1. **DNS resolution:** Identify the server's IP address.
+2. **TCP connection:** Establish a network connection.
+3. **TLS handshake:** Negotiate cryptographic parameters.
+4. **Certificate validation:** Authenticate the server through PKI.
+5. **Key agreement:** Establish shared secrets using ECDHE.
+6. **Secure communication:** Protect HTTP traffic with authenticated encryption.
+
+### Communication Architecture
+
+```text
+        CLIENT
+           |
+           v
+     DNS Resolution
+           |
+           v
+     TCP Connection
+           |
+           v
+      TLS Handshake
+           |
+     +-----+------+
+     |            |
+ Certificate    ECDHE
+ Validation     Exchange
+     |            |
+     +-----+------+
+           |
+           v
+      Session Keys
+           |
+           v
+    AES-GCM / ChaCha20
+       Poly1305
+           |
+           v
+    Encrypted HTTP
+```
+
+## 🛠️ Technical Environment
+
+| Category | Technologies / Concepts |
+|----------|-------------------------|
+| Programming | Python |
+| Version Control | Git, GitHub |
+| Cryptography | Symmetric Encryption, RSA |
+| Security Analysis | Frequency Analysis |
+| Network Security | TLS, HTTPS, PKI |
+| Key Agreement | ECDHE |
+
+## 📈 Skills & Knowledge
+
+This project supports the development of:
+
+- Python programming and algorithm implementation.
+- Understanding of cryptographic principles.
+- Analytical thinking and problem-solving.
+- Foundations of secure communication protocols.
+- Technical documentation and project organization.
+
+## 🚧 Future Extensions
+
+- Hash functions and message integrity.
+- Digital signatures and verification.
+- Authenticated encryption demonstrations.
+- Automated unit tests.
+- TLS certificate inspection using Python.
+
+## ⚠️ Educational Disclaimer
+
+The code is intended for educational exploration only. It has not been security-audited and must not be used as a production cryptographic solution.
 
 ---
 
-**Developed by Salma IZOUGHAR**
+### 👩‍💻 Author
 
-Engineering Student — École Centrale de Lyon
+**Salma IZOUGHAR**
 
-*Python · Cryptography · Cybersecurity*
+Engineering Student | École Centrale de Lyon
+
+**Focus:** Python • Cybersecurity • Cryptographic Algorithms
