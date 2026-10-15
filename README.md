@@ -1,113 +1,93 @@
 
-# 🔐 Phase 5 — Cryptographie et cybersécurité
+# 🔐 Cryptography & Cybersecurity — Phase 5
 
-## 📌 Présentation du projet
+## 📖 Overview
 
-Ce projet est consacré à l'étude et à l'implémentation des principaux mécanismes cryptographiques utilisés en cybersécurité.
+This project explores the fundamental concepts of cryptography and their applications in cybersecurity through practical Python implementations.
 
-Il a pour objectif de comprendre les principes fondamentaux du chiffrement, d'explorer les différences entre la cryptographie symétrique et asymétrique, et d'analyser leur utilisation dans les protocoles de communication sécurisés.
+The main objective is to understand how encryption algorithms protect sensitive information and how cryptographic mechanisms secure modern communications.
 
-Les différentes implémentations sont réalisées en **Python**.
+## 🎯 Project Objectives
 
-## 🎯 Objectifs pédagogiques
+- Understand symmetric and asymmetric encryption.
+- Explore RSA public-key cryptography.
+- Implement cryptographic concepts using Python.
+- Perform letter frequency analysis.
+- Understand digital certificates and Public Key Infrastructure (PKI).
+- Explore secure communication protocols such as TLS and HTTPS.
 
-- Comprendre les principes de confidentialité, d'intégrité et d'authenticité des données.
-- Étudier les mécanismes de chiffrement symétrique et asymétrique.
-- Explorer le fonctionnement de l'algorithme RSA.
-- Comprendre les techniques d'analyse fréquentielle.
-- Découvrir les certificats numériques et les infrastructures à clés publiques (PKI).
-- Comprendre les mécanismes de sécurisation des communications avec TLS et HTTPS.
-
-## 📂 Structure du projet
+## 📂 Project Structure
 
 ```text
-Phase-5-Cryptographie/
+Cryptography/
 │
-├── ChiffrementAsymetrique.py
-├── chiffrementSymetrique.py
-├── frequency.py
-└── README.md
+├── ChiffrementAsymetrique.py    # Asymmetric encryption
+├── chiffrementSymetrique.py     # Symmetric encryption
+├── frequency.py                # Letter frequency analysis
+└── README.md                   # Project documentation
 ```
 
-## 🛠️ Technologies utilisées
+## 🛠️ Technologies & Concepts
 
-- **Langage :** Python
-- **Domaine :** Cybersécurité et cryptographie
-- **Outils :** Git et GitHub
-- **Concepts :** RSA, chiffrement symétrique, analyse fréquentielle, TLS, HTTPS et PKI
+**Programming:** Python
 
-## 🔍 Comprendre HTTPS et TLS
+**Tools:** Git, GitHub
 
-L'un des objectifs principaux de ce projet est de comprendre comment les mécanismes cryptographiques interviennent dans l'établissement d'une connexion HTTPS sécurisée.
+**Cybersecurity concepts:**
+- Symmetric encryption
+- Asymmetric encryption (RSA)
+- Frequency analysis
+- Digital certificates
+- TLS / HTTPS
+- Public Key Infrastructure (PKI)
 
-### Schéma simplifié d'une connexion HTTPS
+## 🔒 How HTTPS Works
+
+A secure HTTPS connection combines several cryptographic mechanisms:
 
 ```text
-Utilisateur
-    │
-    │ https://example.com
-    ▼
-   DNS
-    │
-    ▼
-Adresse IP
-    │
-    ▼
-   TCP
-    │
-    ▼
-Port 443
-    │
-    ▼
-   TLS
-    │
-    ├── Certificat numérique
-    │       └── PKI / Autorité de certification
-    │
-    ├── Authentification du serveur
-    │
-    ├── Échange de clés
-    │       └── ECDHE
-    │
-    └── Clés de session
-            │
-            ▼
-    Chiffrement symétrique
-    AES-GCM / ChaCha20-Poly1305
-            │
-            ▼
-       Données HTTP
+Client
+  │
+  ▼
+DNS Resolution
+  │
+  ▼
+TCP Connection (Port 443)
+  │
+  ▼
+TLS Handshake
+  │
+  ├── Certificate Verification (PKI)
+  │
+  ├── Server Authentication
+  │
+  └── Key Exchange (ECDHE)
+          │
+          ▼
+     Session Keys
+          │
+          ▼
+Symmetric Encryption
+(AES-GCM / ChaCha20-Poly1305)
+          │
+          ▼
+Secure HTTP Communication
 ```
 
-### Principales étapes
+## 📚 Learning Outcomes
 
-1. **DNS :** résolution du nom de domaine en adresse IP.
-2. **TCP :** établissement de la connexion réseau.
-3. **TLS :** négociation des paramètres de sécurité et authentification du serveur.
-4. **ECDHE :** établissement d'un secret partagé permettant de dériver les clés de session.
-5. **Chiffrement symétrique :** protection des données échangées.
-6. **HTTPS :** transmission sécurisée des requêtes et réponses HTTP.
+Through this project, I developed a stronger understanding of:
 
-## 📚 Compétences développées
+- Cryptographic algorithms and their applications.
+- Secure data transmission.
+- Encryption and decryption principles.
+- Python programming for cybersecurity.
+- The role of cryptography in modern network security.
 
-Ce projet permet de renforcer les compétences suivantes :
+## 👩‍💻 Author
 
-- Programmation Python appliquée à la cybersécurité.
-- Compréhension des algorithmes cryptographiques.
-- Analyse des mécanismes de protection des données.
-- Compréhension des protocoles de communication sécurisés.
-- Organisation et documentation d'un projet technique.
+**Salma IZOUGHAR**
 
-## 🚀 Perspectives
+Engineering Student — École Centrale de Lyon
 
-Les prochaines étapes pourront inclure :
-
-- L'étude des fonctions de hachage cryptographiques.
-- L'implémentation de signatures numériques.
-- L'analyse des certificats X.509.
-- L'expérimentation des échanges de clés.
-- L'étude approfondie de TLS 1.3.
-
----
-
-**Projet académique — Phase 5 : Cryptographie**
+*Academic project | Cybersecurity & Cryptography*
