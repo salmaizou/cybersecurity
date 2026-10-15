@@ -1,93 +1,90 @@
 
-# 🔐 Cryptography & Cybersecurity — Phase 5
+# 🔐 Cryptography Fundamentals | Python
 
-## 📖 Overview
+### Exploring Encryption, Security Algorithms & Secure Communications
 
-This project explores the fundamental concepts of cryptography and their applications in cybersecurity through practical Python implementations.
+## 🚀 About the Project
 
-The main objective is to understand how encryption algorithms protect sensitive information and how cryptographic mechanisms secure modern communications.
+This repository contains Python implementations of fundamental cryptographic techniques, developed as part of a cybersecurity learning project.
 
-## 🎯 Project Objectives
+The goal is to explore how cryptographic algorithms work, understand their security principles, and connect theoretical knowledge with practical programming.
 
-- Understand symmetric and asymmetric encryption.
-- Explore RSA public-key cryptography.
-- Implement cryptographic concepts using Python.
-- Perform letter frequency analysis.
-- Understand digital certificates and Public Key Infrastructure (PKI).
-- Explore secure communication protocols such as TLS and HTTPS.
+## 💻 Implemented Modules
 
-## 📂 Project Structure
+| Module | Description |
+|--------|-------------|
+| `ChiffrementAsymetrique.py` | Exploration of RSA asymmetric encryption |
+| `chiffrementSymetrique.py` | Implementation of symmetric encryption concepts |
+| `frequency.py` | Letter frequency analysis for cryptographic studies |
 
-```text
-Cryptography/
-│
-├── ChiffrementAsymetrique.py    # Asymmetric encryption
-├── chiffrementSymetrique.py     # Symmetric encryption
-├── frequency.py                # Letter frequency analysis
-└── README.md                   # Project documentation
-```
+## 🧠 Key Concepts
 
-## 🛠️ Technologies & Concepts
+**1. Symmetric Cryptography**
 
-**Programming:** Python
+Encryption and decryption using a shared secret key.
 
-**Tools:** Git, GitHub
+**2. Asymmetric Cryptography**
 
-**Cybersecurity concepts:**
-- Symmetric encryption
-- Asymmetric encryption (RSA)
-- Frequency analysis
-- Digital certificates
-- TLS / HTTPS
-- Public Key Infrastructure (PKI)
+Public-key and private-key mechanisms, with a focus on RSA.
 
-## 🔒 How HTTPS Works
+**3. Cryptanalysis**
 
-A secure HTTPS connection combines several cryptographic mechanisms:
+Frequency analysis to explore patterns in encrypted or plaintext messages.
+
+**4. Secure Communication**
+
+Understanding how HTTPS and TLS combine certificate verification, key exchange, and authenticated encryption.
+
+## 🔗 HTTPS Security Architecture
 
 ```text
-Client
-  │
-  ▼
-DNS Resolution
-  │
-  ▼
-TCP Connection (Port 443)
-  │
-  ▼
-TLS Handshake
-  │
-  ├── Certificate Verification (PKI)
-  │
-  ├── Server Authentication
-  │
-  └── Key Exchange (ECDHE)
-          │
-          ▼
-     Session Keys
-          │
-          ▼
-Symmetric Encryption
-(AES-GCM / ChaCha20-Poly1305)
-          │
-          ▼
-Secure HTTP Communication
+             HTTPS Connection
+                    |
+             TLS Handshake
+                    |
+          +---------+---------+
+          |                   |
+   Authentication       Key Agreement
+    Certificates            ECDHE
+          |                   |
+          +---------+---------+
+                    |
+              Session Keys
+                    |
+         Authenticated Encryption
+          AES-GCM / ChaCha20
+                    |
+           Secure Data Exchange
 ```
 
-## 📚 Learning Outcomes
+## 🛠️ Tech Stack
 
-Through this project, I developed a stronger understanding of:
+- **Language:** Python
+- **Version Control:** Git & GitHub
+- **Field:** Cybersecurity
+- **Topics:** Encryption, RSA, Frequency Analysis, TLS, PKI
 
-- Cryptographic algorithms and their applications.
-- Secure data transmission.
-- Encryption and decryption principles.
-- Python programming for cybersecurity.
-- The role of cryptography in modern network security.
+## 🎯 Skills Demonstrated
 
-## 👩‍💻 Author
+- Python programming
+- Cryptographic algorithm fundamentals
+- Analytical problem-solving
+- Security concepts
+- Technical documentation
 
-**Salma IZOUGHAR**
+## 📈 Future Improvements
 
-Engineering Student — École Centrale de Lyon
+- Implement hashing and digital signatures
+- Explore AES encryption
+- Experiment with key exchange protocols
+- Study TLS 1.3 and certificate validation
+- Add automated tests
 
-*Academic project | Cybersecurity & Cryptography*
+---
+
+### 👩‍💻 Author
+
+**Salma IZOUGHAR**  
+Engineering Student | École Centrale de Lyon
+
+*Cybersecurity • Cryptography • Python*
