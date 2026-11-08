@@ -1,15 +1,15 @@
 
-# 🔐 Cryptography & Secure Systems
+# Cryptography & Secure Systems
 
 ### Exploring Cryptographic Algorithms Through Python
 
-## 📖 Project Description
+## Project Description
 
 This repository presents a collection of Python exercises dedicated to understanding the foundations of cryptography and information security.
 
 The project combines algorithmic exploration, practical programming, and security concepts to illustrate how cryptographic mechanisms contribute to protecting digital information.
 
-## 🎯 Objectives
+##  Objectives
 
 The main objectives are to:
 
@@ -19,7 +19,7 @@ The main objectives are to:
 - Strengthen Python programming and algorithmic reasoning.
 - Understand the role of cryptography in secure network protocols.
 
-## 🗂️ Repository Structure
+##  Repository Structure
 
 ```text
 cryptography-project/
@@ -30,7 +30,7 @@ cryptography-project/
 └── README.md
 ```
 
-## 🔬 Technical Exploration
+##  Technical Exploration
 
 ### 1. Symmetric Cryptography
 
@@ -50,7 +50,7 @@ Investigate character frequency distributions and their applications in classica
 
 **Python module:** `frequency.py`
 
-## 🌍 Real-World Application: HTTPS
+##  Real-World Application: HTTPS
 
 Cryptography plays a central role in protecting web communications.
 
@@ -106,7 +106,7 @@ A simplified HTTPS connection follows these steps:
 | Network Security | TLS, HTTPS, PKI |
 | Key Agreement | ECDHE |
 
-## 📈 Skills & Knowledge
+##  Skills & Knowledge
 
 This project supports the development of:
 
@@ -116,7 +116,7 @@ This project supports the development of:
 - Foundations of secure communication protocols.
 - Technical documentation and project organization.
 
-## 🚧 Future Extensions
+##  Future Extensions
 
 - Hash functions and message integrity.
 - Digital signatures and verification.
@@ -124,13 +124,13 @@ This project supports the development of:
 - Automated unit tests.
 - TLS certificate inspection using Python.
 
-## ⚠️ Educational Disclaimer
+##  Educational Disclaimer
 
 The code is intended for educational exploration only. It has not been security-audited and must not be used as a production cryptographic solution.
 
 ---
 
-### 👩‍💻 Author
+###  Author
 
 **Salma IZOUGHAR**
 
